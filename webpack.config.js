@@ -18,7 +18,7 @@ module.exports = {
   output: {
     filename: "[name].umd.js", //card.umd.js 输出文件的名称
     path: path.resolve(__dirname, "dist"), //输出文件的本地路径，path的URL是以HTML为基准的
-    library: "mui", //配置导出库的名称
+    library: "h", //配置导出库的名称
     libraryTarget: "umd", //配置以何种方式导出库
   },
   plugins: [new VueLoaderPlugin()],

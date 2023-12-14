@@ -5,19 +5,19 @@
 #### 1.安装组件库
 
 ```bash
-npm i dstest-components
+npm i h-components
 ```
 
 #### 2.引入组件库
 
 ```javascript
 //全部引入
-import "dstest-components/dist/css/index.css";
-import MUI from "dstest-components";
-Vue.use(MUI);
+import "h-components/dist/css/index.css";
+import H from "h-components";
+Vue.use(H);
 
 //按需引入
-import "dstest-components/dist/css/demo.css";
-import { Demo } from "dstest-components";
+import "h-components/dist/css/demo.css";
+import { Demo } from "h-components";
 Vue.use(Demo);
 ```

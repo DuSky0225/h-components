@@ -1,12 +1,12 @@
 {
-  "name": "dstest-components",
-  "version": "0.1.1",
-  "description": "学习打包组件库上传npm",
+  "name": "h-components",
+  "version": "0.0.1",
+  "description": "组件库",
   "main": "dist/index.umd.js",
   "keywords": [
     "vue",
     "UI",
-    "dstest"
+    "components"
   ],
   "author": "dusky",
   "files": [

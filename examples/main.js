@@ -3,12 +3,13 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import MUI from "dstest-components";
-Vue.use(MUI);
+import h from "h-components";
+import "h-components/dist/css/index.css";
+Vue.use(h);
 
 // import "../dist/css/index.css";
 // import MUI from "../dist/index.umd";
-Vue.use(MUI);
+// Vue.use(MUI);
 
 Vue.config.productionTip = false;
 
