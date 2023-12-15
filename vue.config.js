@@ -9,4 +9,19 @@ module.exports = defineConfig({
   },
   transpileDependencies: true,
   lintOnSave: false, //eslint检验开关
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.(png|svg|gif)$/i,
+  //       use: [
+  //         {
+  //           loader: "file-loader",
+  //           options: {
+  //             outputPath: "imgs",
+  //           },
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
 });
