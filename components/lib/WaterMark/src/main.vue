@@ -10,18 +10,11 @@ export default {
       type: String,
       default: "waterMark",
     },
-    // 是否允许通过js或开发者工具等途径修改水印DOM节点（水印的id，attribute属性，节点的删除）
-    // true为允许，默认不允许
-    inputAllowDele: {
-      type: Boolean,
-      default: false,
-    },
-    // 是否在组件销毁时去除水印节点（前提是允许用户修改DOM，否则去除后会再次自动生成）
-    // true会，默认不会
-    inputDestroy: {
-      type: Boolean,
-      default: false,
-    },
+  },
+  data() {
+    return {
+      observer: null,
+    };
   },
   mounted() {
     this.init();
@@ -36,6 +29,7 @@ export default {
       canvas.height = "130";
       this.maskDiv = document.createElement("div");
       let ctx = canvas.getContext("2d");
+      // context.font = "fontStyle fontWeight fontSize fontFamily";
       ctx.font = "normal 18px Microsoft Yahei"; // 设置样式
       ctx.fillStyle = "rgba(112, 113, 114, 0.1)"; // 水印字体颜色
       ctx.rotate((30 * Math.PI) / 180); // 水印偏转角度
@@ -55,28 +49,24 @@ export default {
     },
     // 监听更改，更改后执行callback回调函数，会得到一个相关信息的参数对象
     Monitor() {
-      // let body = document.getElementsByTagName("body")[0];
-      // let options = {
-      //   childList: true,
-      //   attributes: true,
-      //   characterData: true,
-      //   subtree: true,
-      //   attributeOldValue: true,
-      //   characterDataOldValue: true,
-      // };
-      let observer = new MutationObserver(this.init);
-      // observer.observe(body, options); // 监听body节点
-      // let observer = new MutationObserver((mutations) => {
-      //   mutations.forEach((mutation) => {
-      //     if (
-      //       mutation.removedNodes.length > 0 &&
-      //       mutation.removedNodes[0].id == "water_canvas"
-      //     ) {
-      //       this.init();
-      //     }
-      //   });
-      // });
-      observer.observe(document.body, {
+      this.observer = new MutationObserver((mutationsList) => {
+        this.observer.disconnect(); // 停止监听
+        // 删除水印
+        const waterMark = document.getElementById("_waterMark");
+        if (waterMark) {
+          document.body.removeChild(waterMark);
+        }
+        this.init(); // 重新生成水印
+        this.observer.observe(document.body, {
+          childList: true,
+          attributes: true,
+          subtree: true,
+          attributesOldValue: true,
+          characterData: true,
+          characterDataOldValue: true,
+        }); // 重新开始监听
+      });
+      this.observer.observe(document.body, {
         childList: true,
         attributes: true,
         subtree: true,
@@ -85,6 +75,9 @@ export default {
         characterDataOldValue: true,
       });
     },
+  },
+  beforeDestroy() {
+    this.observer.disconnect();
   },
 };
 </script>
