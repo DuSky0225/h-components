@@ -1,11 +1,14 @@
 import Demo from "./demo";
 import Card from "./card";
+import ConferenceWhiteboard from "./ConferenceWhiteboard";
+import WaterMark from "./WaterMark";
 
 const components = {
   Demo,
   Card,
+  ConferenceWhiteboard,
+  WaterMark,
 };
-
 const install = function (Vue) {
   if (install.installed) return; //避免重复安装
   Object.keys(components).forEach((key) => {

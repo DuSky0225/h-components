@@ -1,6 +1,6 @@
 {
-  "name": "h-components",
-  "version": "0.0.1",
+  "name": "dstest-components",
+  "version": "0.1.2",
   "description": "组件库",
   "main": "dist/index.umd.js",
   "keywords": [
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "dstest-components": "^0.1.1",
+    "dstest-components": "^0.1.2",
     "file-loader": "^6.2.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",

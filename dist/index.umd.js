@@ -20,6 +20,26 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./components/lib/ConferenceWhiteboard/index.js":
+/*!******************************************************!*\
+  !*** ./components/lib/ConferenceWhiteboard/index.js ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_main_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/main.vue */ \"./components/lib/ConferenceWhiteboard/src/main.vue\");\n\n\n_src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].install = function (Vue) {\n  Vue.component(_src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].name, _src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n\n//# sourceURL=webpack://h/./components/lib/ConferenceWhiteboard/index.js?");
+
+/***/ }),
+
+/***/ "./components/lib/WaterMark/index.js":
+/*!*******************************************!*\
+  !*** ./components/lib/WaterMark/index.js ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_main_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/main.vue */ \"./components/lib/WaterMark/src/main.vue\");\n\n\n_src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].install = function (Vue) {\n  Vue.component(_src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].name, _src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_src_main_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n\n//# sourceURL=webpack://h/./components/lib/WaterMark/index.js?");
+
+/***/ }),
+
 /***/ "./components/lib/card/index.js":
 /*!**************************************!*\
   !*** ./components/lib/card/index.js ***!
@@ -46,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
   \*********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _demo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./demo */ \"./components/lib/demo/index.js\");\n/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./card */ \"./components/lib/card/index.js\");\n\n\n\nconst components = {\n  Demo: _demo__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  Card: _card__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n};\n\nconst install = function (Vue) {\n  if (install.installed) return; //避免重复安装\n  Object.keys(components).forEach((key) => {\n    Vue.component(components[key].name, components[key]);\n  });\n};\n\nconst API = {\n  install,\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (API);\n\n\n//# sourceURL=webpack://h/./components/lib/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _demo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./demo */ \"./components/lib/demo/index.js\");\n/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./card */ \"./components/lib/card/index.js\");\n/* harmony import */ var _ConferenceWhiteboard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ConferenceWhiteboard */ \"./components/lib/ConferenceWhiteboard/index.js\");\n/* harmony import */ var _WaterMark__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./WaterMark */ \"./components/lib/WaterMark/index.js\");\n\n\n\n\n\nconst components = {\n  Demo: _demo__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  Card: _card__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  ConferenceWhiteboard: _ConferenceWhiteboard__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  WaterMark: _WaterMark__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n};\nconst install = function (Vue) {\n  if (install.installed) return; //避免重复安装\n  Object.keys(components).forEach((key) => {\n    Vue.component(components[key].name, components[key]);\n  });\n};\n\nconst API = {\n  install,\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (API);\n\n\n//# sourceURL=webpack://h/./components/lib/index.js?");
 
 /***/ }),
 
@@ -77,6 +97,46 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/logo.png\");\n\n//# sourceURL=webpack://h/./examples/assets/logo.png?");
+
+/***/ }),
+
+/***/ "./components/lib/ConferenceWhiteboard/src/main.vue":
+/*!**********************************************************!*\
+  !*** ./components/lib/ConferenceWhiteboard/src/main.vue ***!
+  \**********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_vue_vue_type_template_id_5f4875e5_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.vue?vue&type=template&id=5f4875e5&scoped=true */ \"./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=template&id=5f4875e5&scoped=true\");\n/* harmony import */ var _main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.vue?vue&type=script&lang=js */ \"./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=script&lang=js\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n;\nvar component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _main_vue_vue_type_template_id_5f4875e5_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render,\n  _main_vue_vue_type_template_id_5f4875e5_scoped_true__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,\n  false,\n  null,\n  \"5f4875e5\",\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"components/lib/ConferenceWhiteboard/src/main.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack://h/./components/lib/ConferenceWhiteboard/src/main.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=script&lang=js":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=script&lang=js ***!
+  \*********************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: \"ConferenceWhiteboard\",\n  data() {\n    return {\n      context: null,\n      drawing: false,\n      drawingMode: false, // 用于切换绘制和橡皮擦模式\n    };\n  },\n  mounted() {\n    this.context = this.$refs.canvas.getContext(\"2d\");\n  },\n  methods: {\n    startDrawing(event) {\n      this.drawing = true;\n      const x = event.clientX;\n      const y = event.clientY;\n      this.context.beginPath();\n      this.context.moveTo(x, y);\n    },\n    draw(event) {\n      if (!this.drawing) return;\n      const x = event.clientX;\n      const y = event.clientY;\n\n      if (this.drawingMode) {\n        // 橡皮擦模式\n        this.context.clearRect(x, y, 10, 10); // 使用橡皮擦效果清除部分区域\n      } else {\n        // 绘制模式\n        this.context.lineTo(x, y);\n        this.context.stroke();\n      }\n    },\n    stopDrawing() {\n      this.drawing = false;\n    },\n    toggleMode() {\n      this.drawingMode = !this.drawingMode;\n    },\n  },\n});\n\n\n//# sourceURL=webpack://h/./components/lib/ConferenceWhiteboard/src/main.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
+
+/***/ }),
+
+/***/ "./components/lib/WaterMark/src/main.vue":
+/*!***********************************************!*\
+  !*** ./components/lib/WaterMark/src/main.vue ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_vue_vue_type_template_id_444d5294__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.vue?vue&type=template&id=444d5294 */ \"./components/lib/WaterMark/src/main.vue?vue&type=template&id=444d5294\");\n/* harmony import */ var _main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.vue?vue&type=script&lang=js */ \"./components/lib/WaterMark/src/main.vue?vue&type=script&lang=js\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n;\nvar component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _main_vue_vue_type_template_id_444d5294__WEBPACK_IMPORTED_MODULE_0__.render,\n  _main_vue_vue_type_template_id_444d5294__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"components/lib/WaterMark/src/main.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack://h/./components/lib/WaterMark/src/main.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/WaterMark/src/main.vue?vue&type=script&lang=js":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/WaterMark/src/main.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: \"WaterMark\",\n  props: {\n    // 显示的水印文本\n    inputText: {\n      type: String,\n      default: \"waterMark\",\n    },\n    // 是否允许通过js或开发者工具等途径修改水印DOM节点（水印的id，attribute属性，节点的删除）\n    // true为允许，默认不允许\n    inputAllowDele: {\n      type: Boolean,\n      default: false,\n    },\n    // 是否在组件销毁时去除水印节点（前提是允许用户修改DOM，否则去除后会再次自动生成）\n    // true会，默认不会\n    inputDestroy: {\n      type: Boolean,\n      default: false,\n    },\n  },\n  mounted() {\n    this.init();\n    this.Monitor();\n  },\n  methods: {\n    // 生成水印DOM节点\n    init() {\n      let canvas = document.createElement(\"canvas\");\n      canvas.id = \"canvas\";\n      canvas.width = \"200\"; // 单个水印的宽高\n      canvas.height = \"130\";\n      this.maskDiv = document.createElement(\"div\");\n      let ctx = canvas.getContext(\"2d\");\n      ctx.font = \"normal 18px Microsoft Yahei\"; // 设置样式\n      ctx.fillStyle = \"rgba(112, 113, 114, 0.1)\"; // 水印字体颜色\n      ctx.rotate((30 * Math.PI) / 180); // 水印偏转角度\n      ctx.fillText(this.inputText, 30, 20);\n      let src = canvas.toDataURL(\"image/png\");\n      this.maskDiv.style.position = \"fixed\";\n      this.maskDiv.style.zIndex = \"9999\";\n      this.maskDiv.id = \"_waterMark\";\n      this.maskDiv.style.top = \"0\";\n      this.maskDiv.style.left = \"0\";\n      this.maskDiv.style.height = \"100%\";\n      this.maskDiv.style.width = \"100%\";\n      this.maskDiv.style.pointerEvents = \"none\";\n      this.maskDiv.style.backgroundImage = \"URL(\" + src + \")\";\n      // 水印节点插到body下\n      document.body.appendChild(this.maskDiv);\n    },\n    // 监听更改，更改后执行callback回调函数，会得到一个相关信息的参数对象\n    Monitor() {\n      // let body = document.getElementsByTagName(\"body\")[0];\n      // let options = {\n      //   childList: true,\n      //   attributes: true,\n      //   characterData: true,\n      //   subtree: true,\n      //   attributeOldValue: true,\n      //   characterDataOldValue: true,\n      // };\n      let observer = new MutationObserver(this.init);\n      // observer.observe(body, options); // 监听body节点\n      // let observer = new MutationObserver((mutations) => {\n      //   mutations.forEach((mutation) => {\n      //     if (\n      //       mutation.removedNodes.length > 0 &&\n      //       mutation.removedNodes[0].id == \"water_canvas\"\n      //     ) {\n      //       this.init();\n      //     }\n      //   });\n      // });\n      observer.observe(document.body, {\n        childList: true,\n        attributes: true,\n        subtree: true,\n        attributesOldValue: true,\n        characterData: true,\n        characterDataOldValue: true,\n      });\n    },\n  },\n});\n\n\n//# sourceURL=webpack://h/./components/lib/WaterMark/src/main.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -120,6 +180,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n\n/* harmony default export *
 
 /***/ }),
 
+/***/ "./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=script&lang=js":
+/*!**********************************************************************************!*\
+  !*** ./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./main.vue?vue&type=script&lang=js */ \"./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=script&lang=js\");\n /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack://h/./components/lib/ConferenceWhiteboard/src/main.vue?");
+
+/***/ }),
+
+/***/ "./components/lib/WaterMark/src/main.vue?vue&type=script&lang=js":
+/*!***********************************************************************!*\
+  !*** ./components/lib/WaterMark/src/main.vue?vue&type=script&lang=js ***!
+  \***********************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./main.vue?vue&type=script&lang=js */ \"./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/WaterMark/src/main.vue?vue&type=script&lang=js\");\n /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack://h/./components/lib/WaterMark/src/main.vue?");
+
+/***/ }),
+
 /***/ "./components/lib/card/src/main.vue?vue&type=script&lang=js":
 /*!******************************************************************!*\
   !*** ./components/lib/card/src/main.vue?vue&type=script&lang=js ***!
@@ -140,6 +220,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 /***/ }),
 
+/***/ "./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=template&id=5f4875e5&scoped=true":
+/*!****************************************************************************************************!*\
+  !*** ./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=template&id=5f4875e5&scoped=true ***!
+  \****************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   render: function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_5f4875e5_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render; },\n/* harmony export */   staticRenderFns: function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_5f4875e5_scoped_true__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns; }\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_5f4875e5_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./main.vue?vue&type=template&id=5f4875e5&scoped=true */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=template&id=5f4875e5&scoped=true\");\n\n\n//# sourceURL=webpack://h/./components/lib/ConferenceWhiteboard/src/main.vue?");
+
+/***/ }),
+
+/***/ "./components/lib/WaterMark/src/main.vue?vue&type=template&id=444d5294":
+/*!*****************************************************************************!*\
+  !*** ./components/lib/WaterMark/src/main.vue?vue&type=template&id=444d5294 ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   render: function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_444d5294__WEBPACK_IMPORTED_MODULE_0__.render; },\n/* harmony export */   staticRenderFns: function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_444d5294__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns; }\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_444d5294__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./main.vue?vue&type=template&id=444d5294 */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/WaterMark/src/main.vue?vue&type=template&id=444d5294\");\n\n\n//# sourceURL=webpack://h/./components/lib/WaterMark/src/main.vue?");
+
+/***/ }),
+
 /***/ "./components/lib/card/src/main.vue?vue&type=template&id=402a8624&scoped=true":
 /*!************************************************************************************!*\
   !*** ./components/lib/card/src/main.vue?vue&type=template&id=402a8624&scoped=true ***!
@@ -157,6 +257,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   render: function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_abcaae0a_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render; },\n/* harmony export */   staticRenderFns: function() { return /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_abcaae0a_scoped_true__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns; }\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_lib_index_js_vue_loader_options_main_vue_vue_type_template_id_abcaae0a_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./main.vue?vue&type=template&id=abcaae0a&scoped=true */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/demo/src/main.vue?vue&type=template&id=abcaae0a&scoped=true\");\n\n\n//# sourceURL=webpack://h/./components/lib/demo/src/main.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=template&id=5f4875e5&scoped=true":
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/ConferenceWhiteboard/src/main.vue?vue&type=template&id=5f4875e5&scoped=true ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   render: function() { return /* binding */ render; },\n/* harmony export */   staticRenderFns: function() { return /* binding */ staticRenderFns; }\n/* harmony export */ });\nvar render = function render() {\n  var _vm = this,\n    _c = _vm._self._c\n  return _c(\"div\", { staticClass: \"conferenceWhiteboardBox\" }, [\n    _c(\"div\", { staticClass: \"tools\" }, [\n      _c(\"button\", { on: { click: _vm.toggleMode } }, [\n        _vm._v(\n          \"\\n      \" +\n            _vm._s(_vm.drawingMode ? \"切换橡皮擦\" : \"切换绘制\") +\n            \"\\n    \"\n        ),\n      ]),\n    ]),\n    _vm._v(\" \"),\n    _c(\"canvas\", {\n      ref: \"canvas\",\n      staticStyle: { border: \"1px solid #000\" },\n      on: {\n        mousedown: _vm.startDrawing,\n        mousemove: _vm.draw,\n        mouseup: _vm.stopDrawing,\n        mouseleave: _vm.stopDrawing,\n      },\n    }),\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://h/./components/lib/ConferenceWhiteboard/src/main.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/WaterMark/src/main.vue?vue&type=template&id=444d5294":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./components/lib/WaterMark/src/main.vue?vue&type=template&id=444d5294 ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   render: function() { return /* binding */ render; },\n/* harmony export */   staticRenderFns: function() { return /* binding */ staticRenderFns; }\n/* harmony export */ });\nvar render = function render() {\n  var _vm = this,\n    _c = _vm._self._c\n  return _c(\"div\")\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://h/./components/lib/WaterMark/src/main.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
