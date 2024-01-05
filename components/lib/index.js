@@ -1,11 +1,7 @@
-import Demo from "./demo";
-import Card from "./card";
 import ConferenceWhiteboard from "./ConferenceWhiteboard";
 import WaterMark from "./WaterMark";
 
 const components = {
-  Demo,
-  Card,
   ConferenceWhiteboard,
   WaterMark,
 };
